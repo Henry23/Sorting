@@ -153,20 +153,9 @@ def insertionSort(array)
 	return array
 end
 
-def fiild(array,size)
+def fill_in(array,size)
 	1.upto(size) do |i|
 		array << rand(100)
-	end
-end
-
-def inspects(array)
-	lenD = array.size-1
-	0.upto(lenD) do |i|
-		if lenD == i			
-			print "#{array[i]} \n"
-		else
-			print "#{array[i]}, "
-		end
 	end
 end
 
@@ -174,49 +163,49 @@ Rsize = 1000
 
 #1	
 array1 = Array.new()
-fiild(array1,Rsize)
+fill_in(array1,Rsize)
 array1.shuffle
 #print "bubbleSort not sort\n "
 #puts array1.inspect
 
 #2
 array2 = Array.new()
-fiild(array2,Rsize)
+fill_in(array2,Rsize)
 array2.shuffle
 #print "SelectionSort not sort\n "
 #puts array2.inspect
 
 #3
 array3 = Array.new()
-fiild(array3,Rsize)
+fill_in(array3,Rsize)
 array3.shuffle
 #print "InsertionSort not sort\n "
 #puts array3.inspect
 
 #4
 array4 = Array.new()
-fiild(array4,Rsize)
+fill_in(array4,Rsize)
 array4.shuffle
 #print "MergeSort not sort\n "
 #puts array4.inspect
 
 #5
 array5 = Array.new()
-fiild(array5,Rsize)
+fill_in(array5,Rsize)
 array5.shuffle
 #print "QuickSort not sort\n "
 #puts array5.inspect
 
 #6
 array6 = Array.new()
-fiild(array6, Rsize)
+fill_in(array6, Rsize)
 array6.shuffle
 #print "RadicSort not sort\n "
 #puts array6.inspect
 
 #7
 array7 = Array.new()
-fiild(array7, Rsize)
+fill_in(array7, Rsize)
 array7.shuffle
 #print "HeapSort not sort\n "
 #puts array7.inspect
